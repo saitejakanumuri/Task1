@@ -1,1 +1,1 @@
-Snap shot of task result is in "static_result.png" file.
+Snap shot of the given task result is in "/images/static_result.png" file.
