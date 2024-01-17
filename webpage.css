@@ -1,0 +1,65 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root{
+    font-family:poppins;
+    
+}
+body{
+    background-color:#ffffff;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 30vw auto;
+    gap:100px;
+    min-height:100vh;  
+    
+  }
+  /* first left side*/
+  .one {
+    padding-top:80px;
+    padding-left:20px;
+    grid-column: 1;
+    color:black;
+    background-color: #f1f2f6;
+    max-width:30vw;
+  }
+  .one img{
+    padding-top:10px;
+    min-height:auto;
+    max-width:auto;
+  }
+
+  /*second right side */
+  .two {
+    max-width:70vw;
+    color:black;
+    background-color:#ffffff;
+  }
+  .banner{
+    background-color:#ff6448;
+  }
+  .app-heading {
+    background-color:#ff6448;
+    max-width:fit-content;  
+    margin-top:100px;
+    max-height:fit-content;
+    padding: 10px 100px 10px 100px;
+    font-size: 2em;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+  .table-reports td{
+        padding:30px;
+        justify-content:right;
+    }
+  table,th,td{
+    padding:5px;
+    border:1px solid black;
+    border-collapse: collapse;
+  }
+  .results{
+    margin-top:100px;
+    padding-left:50px;
+  }

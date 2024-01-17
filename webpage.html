@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="webpage.css"/>
+        <title>Innodatatics</title>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <div class="wrapper">
+        <div class="one">
+            <div>       
+                <img src = "images/company-logo.png" alt="company-logo">
+                <h2>Drug Quantity Forecasting</h2>
+                <form>
+                    <p>Select a category</p>
+                    <select style=" height:40px; width: 20vw;"name="category" id="category">
+                        <option value="Injection">INJECTIONS</option>
+                        <option value="Tablets">TABLETS</option>
+                        <option value="Ointments">OINTMENTS</option>
+                        <option value="inhalers">INHALERS</option>
+                    </select>
+                </form>
+                <form>
+                    <p>Select Confidence Interval</p>
+                    <input type="radio" id="95-interval" value="95" name="interval"/>
+                    <label for="95-interval">95</label><br>
+                    <input type="radio" id="90-interval" value="90" name="interval"/>
+                    <label for="90-interval">90</label>
+                </form><br>
+                <a href="#">Download Combined Forecasts CSV</a><br><br>
+                <button style="text-align: center; height:30px; width:auto;">Upload to AWS S3</button>
+            </div>
+        </div>
+        <div class="two">
+            <div class="inner-grid">
+                <div className="banner">
+                    <h1 style="text-align: center;" class="app-heading">Drug Quantity Forecasting App</h1>
+                </div>
+
+                <div className="results">
+                    <h3 id="drug-name" value="">Drug Name: MEROPENEM 1GM INJ</h3>
+                    
+                    <h3>Next 3 Months Forecast</h3>
+                    <table className="table-reports">
+                        <tr>
+                            <th></th>
+                            <th>Month & Year</th>
+                            <th>Forecasted_Quantity</th>
+                            <th>Lower Bound</th>
+                            <th>Upper Bound</th>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>Mar 2023</td>
+                            <td>1328</td>
+                            <td>1262</td>
+                            <td>1395</td>
+                        </tr>
+                        <tr>
+                            <td>51</td>
+                            <td>Apr 2023</td>
+                            <td>1316</td>
+                            <td>1250</td>
+                            <td>1381</td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>May 2023</td>
+                            <td>1259</td>
+                            <td>1196</td>
+                            <td>1322</td>
+                        </tr>
+                    </table>
+                    <h3 id="recorder-point">Recorder Point : 408.0</h3>
+                </div>
+            </div>
+            
+        </div>
+      </div>
+</body>
+</html>
